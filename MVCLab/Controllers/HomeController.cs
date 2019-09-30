@@ -1,15 +1,22 @@
-﻿using System;
+﻿using MVCLab.Manager;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
 namespace MVCLab.Controllers
 {
+    [Attribute.Interceptor]
     public class HomeController : Controller
     {
         public ActionResult Index()
         {
+            //DoSomeThing();
+            //DoSomeThing1();
+            new NothingManager().DoNothing();
+            new NothingManager().DoNothing1();
             return View();
         }
 
@@ -26,5 +33,14 @@ namespace MVCLab.Controllers
 
             return View();
         }
+        private void DoSomeThing()
+        {
+            Debug.WriteLine("DoSomeThing");
+        }
+        private void DoSomeThing1()
+        {
+            Debug.WriteLine("DoSomeThing1");
+        }
+
     }
 }
