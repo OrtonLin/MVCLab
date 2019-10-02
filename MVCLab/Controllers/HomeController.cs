@@ -1,11 +1,14 @@
-﻿using System;
+﻿using MVCLab.Manager;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
 namespace MVCLab.Controllers
 {
+    [Attribute.Interceptor]
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -26,5 +29,7 @@ namespace MVCLab.Controllers
 
             return View();
         }
+        
+
     }
 }
