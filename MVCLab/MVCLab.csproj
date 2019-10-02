@@ -135,12 +135,14 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Attribute\MethodLogAttribute.cs" />
     <Compile Include="Controllers\AOPController.cs" />
+    <Compile Include="Controllers\FireAndForgetController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Manager\NothingManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\TaskUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -179,6 +181,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\AOP\Index.cshtml" />
+    <Content Include="Views\FireAndForget\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

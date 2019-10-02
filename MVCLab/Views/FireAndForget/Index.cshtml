@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<p>
+    @{
+        Dictionary<string, int> counter = ViewBag.Counter;
+        foreach(var item in counter)
+        {
+            <br/><span>@(item.Key+":" + item.Value)</span>
+        }
+
+    }
+</p>
+
+Current String Context :
+<p>
+    @Html.Raw(ViewBag.StringContext);
+</p>
+
