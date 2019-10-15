@@ -133,14 +133,18 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Attribute\MethodLogAttribute.cs" />
+    <Compile Include="Attributes\LeagueAttribute.cs" />
+    <Compile Include="Attributes\MethodLogAttribute.cs" />
     <Compile Include="Controllers\AOPController.cs" />
+    <Compile Include="Controllers\EnumAttributeController.cs" />
     <Compile Include="Controllers\FireAndForgetController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Extension\EnumExtension.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Manager\NothingManager.cs" />
+    <Compile Include="Models\Enums.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\TaskUtility.cs" />
   </ItemGroup>
@@ -182,10 +186,10 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\AOP\Index.cshtml" />
     <Content Include="Views\FireAndForget\Index.cshtml" />
+    <Content Include="Views\EnumAttribute\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
