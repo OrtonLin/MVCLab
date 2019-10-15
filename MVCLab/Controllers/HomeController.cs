@@ -5,10 +5,11 @@ using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MVCLab.Attributes;
 
 namespace MVCLab.Controllers
 {
-    [Attribute.Interceptor]
+    [Interceptor]
     public class HomeController : Controller
     {
         public ActionResult Index()

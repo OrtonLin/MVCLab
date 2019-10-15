@@ -1,9 +1,6 @@
-﻿using MVCLab.Attribute;
+﻿using MVCLab.Attributes;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Web;
 
 namespace MVCLab.Manager
 {
